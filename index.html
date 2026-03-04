@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script>
+        function checkPassword() {
+            var password = ":D"; // Set your password here
+            var userInput = prompt("What two characters do you use most often as a 'emoji' in Discord DM's?");
+    
+            if (userInput === password) {
+                // Password is correct, show the content
+                document.getElementById("protectedContent").style.display = "block";
+            } else {
+                // Password is incorrect, redirect or show an error
+                alert("BRO ARE YOU KIDDING ME! WHY ARE YOU TRYING TO SPY ON ME? >:[ This is not funny!");
+                window.location.href = "about:blank";
+            }
+        }
+    </script>
+</head>
+<body onload="checkPassword()">
+    <div id="protectedContent" style="display:none;">
+        <h1>Jasmine?</h1>
+        <p>IF YOU ARNE'T JASMINE, GET THE HECK OUT OF HERE! </p>
+        <p></p>
+    </div>
+</body>
+</html>
